@@ -362,6 +362,7 @@
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-sistem-persamaan-linier">Definisi Sistem Persamaan Linier</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-persamaan-linier">Solusi Persamaan Linier</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subtitisi">SUbtitisi</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi">Eliminasi</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gaus">Eliminasi Gaus</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-grafik">Solusi Grafik</a></li>
@@ -389,7 +390,7 @@
 <li><p>Tak hingga banyak solusi – jika terdapat lebih dari satu nilai variabel yang memenuhi semua persamaan, biasanya terjadi ketika dua persamaan merepresentasikan garis yang sama.</p></li>
 <li><p>Tidak ada solusi – jika tidak ada nilai variabel yang dapat memenuhi semua persamaan, biasanya terjadi ketika dua persamaan merepresentasikan garis yang sejajar tetapi tidak berpotongan.</p></li>
 </ol>
-<p>BENTUK UMUM SISTEM PERSAMAAN PERSAMAAN LINNIER</p>
+<p><strong>BENTUK UMUM SISTEM PERSAMAAN PERSAMAAN LINNIER</strong></p>
 <ol class="arabic simple">
 <li><p>Sistem Persamaan Linier Dua Variabel (SPLDV)
 Sistem ini terdiri dari dua persamaan linier dengan dua variabel.
@@ -398,21 +399,44 @@ Contoh:
 <img src="image/SPLDV.png" alt="alt text"></p></li>
 <li><p>Sistem Persamaan Linier Tiga Variabel (SPLTV)
 Sistem ini terdiri dari tiga persamaan linier dengan tiga variabel.
-<img alt="alt text" src="image-2.png" />
+<img src="image/image-2.png" alt="alt text" br>
 contoh:
-<img alt="alt text" src="image-3.png" /></p></li>
+<img src="image/image-3.png" alt="alt text"></p></li>
 </ol>
 </section>
 <section id="solusi-persamaan-linier">
 <h2>Solusi Persamaan Linier<a class="headerlink" href="#solusi-persamaan-linier" title="Link to this heading">#</a></h2>
+<p>Untuk menyelesaikan suatu sistem (tergantung konsisten),  kita memerlukan setidaknya  jumlah persamaan yang sama dengan faktor yang tidak diketahui. Di bagian ini, kita akan menyelesaikan sistem (linier) dari dua persamaan dan dua faktor yang tidak diketahui dengan  metode  yang akan kita uraikan selanjutnya, yang didasarkan pada perolehan persamaan derajat pertama:</p>
+<section id="subtitisi">
+<h3>SUbtitisi<a class="headerlink" href="#subtitisi" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Menyelesaikan salah satu persamaan untuk salah satu variabel, kemudian menggantikannya (mensubstitusikannya) ke persamaan lain.</p></li>
+<li><p>Cocok untuk sistem dengan dua variabel.
+Substitusi (penghapusan variabel):  Substitusi dilakukan dengan mengisolasi salah satu faktor yang tidak diketahui (misalnya  x ) dan mensubstitusikan ekspresi tersebut ke persamaan lainnya. Dengan cara ini kita memperoleh persamaan derajat pertama dengan faktor yang tidak diketahui  y . Setelah diselesaikan, kita memperoleh nilai  x  menggunakan nilai  y  yang kita ketahui.</p></li>
+</ul>
+<iframe scrolling="no" title="Solving Systems Using Substitution" src="https://www.geogebra.org/material/iframe/id/u3QSv8dv/width/1922/height/1153/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="1922px" height="1153px" style="border:0px;"> </iframe>
+</section>
 <section id="eliminasi">
 <h3>Eliminasi<a class="headerlink" href="#eliminasi" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Mengeliminasi salah satu variabel dengan menjumlahkan atau mengurangkan persamaan.</p></li>
+<li><p>Efektif untuk sistem dengan dua atau lebih variabel.
+Metode ini dilakukan dengan menjumlahkan atau mengurangkan persamaan agar salah satu variabel dieliminasi.</p></li>
+</ul>
+<iframe scrolling="no" title="Simultaneous Equations:Elimination" src="https://www.geogebra.org/material/iframe/id/MXa3HKy3/width/977/height/574/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="977px" height="574px" style="border:0px;"> </iframe>
 </section>
 <section id="eliminasi-gaus">
 <h3>Eliminasi Gaus<a class="headerlink" href="#eliminasi-gaus" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Metode berbasis matriks yang menggunakan operasi baris elementer untuk menyederhanakan sistem persamaan.</p></li>
+<li><p>Banyak digunakan dalam komputasi numerik.</p></li>
+<li><p>Metode ini sering digunakan dalam komputasi numerik dan pemrograman.</p></li>
+</ul>
 </section>
 <section id="solusi-grafik">
 <h3>Solusi Grafik<a class="headerlink" href="#solusi-grafik" title="Link to this heading">#</a></h3>
+<p>Metode ini digunakan terutama untuk Sistem Persamaan Linier Dua Variabel (SPLDV) karena mudah divisualisasikan dalam bidang koordinat.</p>
+<iframe scrolling="no" title="Solving Linear Systems by Graphing: REVAMPED" src="https://www.geogebra.org/material/iframe/id/vyxxahhq/width/824/height/529/border/888888/sfsb/true/smb/false/stb/true/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="824px" height="529px" style="border:0px;"> </iframe>
 </section>
 </section>
 <div class="toctree-wrapper compound">
@@ -477,6 +501,7 @@ contoh:
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-sistem-persamaan-linier">Definisi Sistem Persamaan Linier</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-persamaan-linier">Solusi Persamaan Linier</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subtitisi">SUbtitisi</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi">Eliminasi</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gaus">Eliminasi Gaus</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-grafik">Solusi Grafik</a></li>
