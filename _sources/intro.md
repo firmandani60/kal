@@ -11,9 +11,9 @@ Sistem ini bertujuan untuk menemukan solusi yang memenuhi semua persamaan dalam 
 BENTUK UMUM SISTEM PERSAMAAN PERSAMAAN LINNIER
 1. Sistem Persamaan Linier Dua Variabel (SPLDV)
 Sistem ini terdiri dari dua persamaan linier dengan dua variabel.
-![alt text](image.png)
+<img src="image/image.png" alt="alt text">
 Contoh:
-![alt text](image-1.png)
+<img src="image/SPLDV.png" alt="alt text">
 
 2. Sistem Persamaan Linier Tiga Variabel (SPLTV)
 Sistem ini terdiri dari tiga persamaan linier dengan tiga variabel.
