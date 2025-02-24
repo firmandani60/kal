@@ -13,12 +13,13 @@ Sistem ini bertujuan untuk menemukan solusi yang memenuhi semua persamaan dalam 
 Sistem ini terdiri dari dua persamaan linier dengan dua variabel.
 <img src="image/image.png" alt="alt text">
 Contoh:
-<img src="image/SPLDV.png" alt="alt text">
+<img src="SPLDV.png" alt="alt text">
 
 2. Sistem Persamaan Linier Tiga Variabel (SPLTV)
 Sistem ini terdiri dari tiga persamaan linier dengan tiga variabel.
 <img src="image/image-2.png" alt="alt text" br>
 contoh:
+
 <img src="image/image-3.png" alt="alt text">
 
 ## Solusi Persamaan Linier
@@ -28,13 +29,13 @@ Untuk menyelesaikan suatu sistem (tergantung konsisten),  kita memerlukan setida
 - Cocok untuk sistem dengan dua variabel.
 Substitusi (penghapusan variabel):  Substitusi dilakukan dengan mengisolasi salah satu faktor yang tidak diketahui (misalnya  x ) dan mensubstitusikan ekspresi tersebut ke persamaan lainnya. Dengan cara ini kita memperoleh persamaan derajat pertama dengan faktor yang tidak diketahui  y . Setelah diselesaikan, kita memperoleh nilai  x  menggunakan nilai  y  yang kita ketahui.
 
-<iframe scrolling="no" title="Solving Systems Using Substitution" src="https://www.geogebra.org/material/iframe/id/u3QSv8dv/width/1922/height/1153/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="1922px" height="1153px" style="border:0px;"> </iframe>
+<iframe scrolling="no" title="Solving Systems Using Substitution" src="https://www.geogebra.org/material/iframe/id/u3QSv8dv/width/1922/height/1153/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="824px" height="529px" style="border:0px;"> </iframe>
 
 ### Eliminasi
 - Mengeliminasi salah satu variabel dengan menjumlahkan atau mengurangkan persamaan.
 - Efektif untuk sistem dengan dua atau lebih variabel.
 Metode ini dilakukan dengan menjumlahkan atau mengurangkan persamaan agar salah satu variabel dieliminasi.
-<iframe scrolling="no" title="Simultaneous Equations:Elimination" src="https://www.geogebra.org/material/iframe/id/MXa3HKy3/width/977/height/574/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="977px" height="574px" style="border:0px;"> </iframe>
+<iframe scrolling="no" title="Simultaneous Equations:Elimination" src="https://www.geogebra.org/material/iframe/id/MXa3HKy3/width/977/height/574/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="824px" height="529px" style="border:0px;"> </iframe> 
 
 ### Eliminasi Gaus
 - Metode berbasis matriks yang menggunakan operasi baris elementer untuk menyederhanakan sistem persamaan.
