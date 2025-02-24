@@ -11,15 +11,15 @@ Sistem ini bertujuan untuk menemukan solusi yang memenuhi semua persamaan dalam 
 **BENTUK UMUM SISTEM PERSAMAAN PERSAMAAN LINNIER**
 1. Sistem Persamaan Linier Dua Variabel (SPLDV)
 Sistem ini terdiri dari dua persamaan linier dengan dua variabel.
-![SPLDV](image/image.png)
+![SPLDV](image/1.png)
 Contoh:
 ![Contoh SPLDV](image/SPLDV.png)
 
 2. Sistem Persamaan Linier Tiga Variabel (SPLTV)
 Sistem ini terdiri dari tiga persamaan linier dengan tiga variabel.
-![SPLTV](image/image-2.png)
+![SPLTV](image/2.png)
 contoh:
-![Contoh SPLTV](image/image-3.png)
+![Contoh SPLtV](image/3.png)
 
 ## Solusi Persamaan Linier
 Untuk menyelesaikan suatu sistem (tergantung konsisten),  kita memerlukan setidaknya  jumlah persamaan yang sama dengan faktor yang tidak diketahui. Di bagian ini, kita akan menyelesaikan sistem (linier) dari dua persamaan dan dua faktor yang tidak diketahui dengan  metode  yang akan kita uraikan selanjutnya, yang didasarkan pada perolehan persamaan derajat pertama:
