@@ -40,7 +40,7 @@ Bentuk matriks augmented dari sistem ini adalah:
 
 \begin{bmatrix}
 1&2&3&|6\\
-2&4&6&|12 \\
+2&4&6&|12\\
 0&1&1&|2
 \end{bmatrix}
 
@@ -49,7 +49,7 @@ Langkah 2: Eliminasi Baris
 Kita akan menghilangkan elemen di bawah elemen utama di kolom pertama. Gunakan operasi:
 
 \begin{array}{cc}
-R_2\rightarrowR_2-R_1
+R_2\rightarrow R_2-R_1
 \end{array}
 
 
@@ -119,11 +119,11 @@ Langkah 2: Eliminasi Baris
 Kita akan menghilangkan elemen di bawah elemen utama di kolom pertama.
 
 \begin{array}{cc}
-R_2\rightarrowR_2-2R_1
+R_2\rightarrow R_2-2R_1
 \end{array}
 
 \begin{array}{cc}
-R_3\rightarrowR_3-R_1
+R_3\rightarrow R_3-R_1
 \end{array}
 
 Sehingga matriks berubah menjadi:
@@ -151,7 +151,7 @@ Hasilnya:
 Kemudian eliminasi elemen di bawah elemen utama dengan:
 
 \begin{array}{cc}
-R_3\rightarrowR_3-R_2
+R_3\rightarrow R_3-R_2
 \end{array}
 
 Sehingga diperoleh:
@@ -230,7 +230,7 @@ Langkah 1 : Menyelesaikan ke bentuk matriks augmented
 Langkah 2 : membuat elemen di bawah pivot menjadi nol. 
 
 \begin{array}{cc}
-R_1\leftarrowR_1-2R_2
+R_1\leftarrow R_1-2R_2
 \end{array}
 
 Setelah melakukan perhitungan kita mendapatkan :
@@ -253,7 +253,7 @@ Sehingga matriks augmented menjadi :
 Dari baris kedua, kita dapat mengekspresikan (x_1) dalam bentuk (x_2): 
 
 \begin{array}{cc}
-x_1+x_2=2\Rightarrowx_1=2-x_2
+x_1+x_2=2\Rightarrow x_1=2-x_2
 \end{array}
 
 
@@ -321,13 +321,13 @@ Hasilnya :
 - Dari baris 2:
 
 \begin{array}{cc}
-x_1+x_2=2\Rightarrowx_1=2-x_2
+x_1+x_2=2\Rightarrow x_1=2-x_2
 \end{array}
 
 - Dari baris 1:
 
 \begin{array}{cc}
-x_1+x_2=5\impliesx_1+(1 + 2x_3)=\impliesx_1= 4-2x_3
+x_1+x_2=5\implies x_1+(1 + 2x_3)=\implies x_1= 4-2x_3
 \end{array}
 
 4. Solusi Akhir:
