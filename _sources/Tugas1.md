@@ -382,7 +382,7 @@ $$
 
 $$
 \begin{array}{cc}
-x_1+x_2=5\implies x_1+(1 + 2x_3)=\impliesx_1= 4-2x_3
+x_1+x_2=5 \implies x_1+(1 + 2x_3) = \implies x_1= 4-2x_3
 \end{array}
 $$
 
