@@ -249,6 +249,7 @@ $$
 
 ### Contoh Soal 3 
 Selesaikan dengan menggunakan eliminasi gauss
+
 $$
 \begin{array}{cc}
 2x_1+2x_2&=4\\
@@ -268,9 +269,11 @@ $$
 
 Langkah 2 : membuat elemen di bawah pivot menjadi nol. 
 
+$$
 \begin{array}{cc}
 R_1\leftarrow R_1-2R_2
 \end{array}
+$$
 
 Setelah melakukan perhitungan kita mendapatkan :
 
