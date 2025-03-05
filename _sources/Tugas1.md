@@ -328,12 +328,12 @@ di mana (t) adalah parameter bebas.
 **1. Diketahui Sistem Persamaan Linear:**
 
 $$
-\[
+\begin{split}
 \begin{aligned}
 2x_1 + 2x_2 &= 4 \\
 x_1 + x_2 &= 2
 \end{aligned}
-\]
+\end{split}
 $$
 
 
@@ -341,12 +341,10 @@ $$
 Matriks augmented dari sistem persamaan di atas adalah:
 
 $$
-\[
 \begin{bmatrix} 
 2 & 2 & | 4\\ 
 1 & 1 & | 2 
 \end{bmatrix}
-\]
 $$
 
 **3. Langkah 2: Eliminasi Elemen di Bawah Pivot**
@@ -355,32 +353,28 @@ Kita ingin membuat elemen di bawah pivot pertama menjadi nol.
 Operasi yang dilakukan:
 
 $$
-\[
 R_1 \leftarrow R_1 - 2R_2
-\]
 $$
 
 Setelah perhitungan, kita mendapatkan:
 
 $$
-\[
+\begin{split}
 \begin{aligned}
 R_1: \quad & 2 - 2\cdot1 = 0 \\
 & 2 - 2\cdot1 = 0 \\
 & 4 - 2\cdot2 = 0
 \end{aligned}
-\]
+\end{split}
 $$
 
 Sehingga matriks augmented menjadi:
 
 $$
-\[
 \begin{bmatrix} 
 1 & 1 & | 2\\
 0 & 0 & | 0 
 \end{bmatrix}
-\]
 $$
 
 
@@ -388,34 +382,28 @@ $$
 Dari baris pertama, kita dapat menyatakan \( x_1 \) dalam bentuk \( x_2 \):
 
 $$
-\[
 x_1 + x_2 = 2
-\]
+$$
 
-\[
+$$
 x_1 = 2 - x_2
-\]
 $$
 
 **5. Langkah 4: Menyatakan Solusi dalam Bentuk Parameter**
 Karena kita memiliki satu persamaan dengan dua variabel, kita bisa menyatakan solusi dalam bentuk parameter. Misalkan \( x_2 = t \), maka:
 
 $$
-\[
 x_1 = 2 - t
-\]
 $$
 
 
 **6. Solusi Akhir**
 
 $$
-\[
 \begin{cases} 
 x_1 = 2 - t\\
 x_2 = t
 \end{cases}
-\]
 $$
 
 dengan \( t \) sebagai parameter bebas.
