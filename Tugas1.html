@@ -375,7 +375,10 @@
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-2">Contoh Soal 2</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-3">Contoh Soal 3</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-minggu-kemaren">Soal Minggu kemaren</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-4">Contoh Soal 4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-akhir"><strong>5. Solusi Akhir</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-4">Contoh Soal 4</a></li>
+</ul>
+</li>
 </ul>
 
             </nav>
@@ -697,74 +700,135 @@ x_2=t
 \[\begin{split}
 \begin{split}
 \begin{aligned}
-2x_1 + 2x_2 &amp;= 4 \\
-x_1 + x_2 &amp;= 2
+2x_1 + 3x_2 + 4x_3 &amp;= 9 \\
+3x_1 + 2x_2 + 4x_3 &amp;= 9 \\
+4x_1 + x_2 + x_3 &amp;= 6
 \end{aligned}
 \end{split}
 \end{split}\]</div>
-<p><strong>2. Langkah 1: Ubah ke dalam Bentuk Matriks Augmented</strong>
-Matriks augmented dari sistem persamaan di atas adalah:</p>
+<p><strong>2. Representasi dalam Bentuk Matriks Augmented</strong>
+Kita ubah sistem persamaan menjadi bentuk <strong>matriks augmented</strong>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{bmatrix} 
-2 &amp; 2 &amp; | 4\\ 
-1 &amp; 1 &amp; | 2 
+2 &amp; 3 &amp; 4 &amp; | 9 \\ 
+3 &amp; 2 &amp; 4 &amp; | 9 \\ 
+4 &amp; 1 &amp; 1 &amp; | 6 
 \end{bmatrix}
 \end{split}\]</div>
-<p><strong>3. Langkah 2: Eliminasi Elemen di Bawah Pivot</strong>
-Kita ingin membuat elemen di bawah pivot pertama menjadi nol.</p>
-<p>Operasi yang dilakukan:</p>
+<p><strong>3. Eliminasi Gauss</strong>
+Kita akan mengubah matriks augmented menjadi bentuk <strong>segitiga atas</strong>.</p>
+<p><strong>Langkah 1: Normalisasi Baris Pertama</strong>
+Kita buat elemen pertama dari kolom pertama menjadi <strong>1</strong> dengan membagi baris pertama dengan 2:</p>
 <div class="math notranslate nohighlight">
 \[
-R_1 \leftarrow R_1 - 2R_2
+R_1 \leftarrow \frac{R_1}{2}
 \]</div>
-<p>Setelah perhitungan, kita mendapatkan:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{split}
-\begin{aligned}
-R_1: \quad &amp; 2 - 2\cdot1 = 0 \\
-&amp; 2 - 2\cdot1 = 0 \\
-&amp; 4 - 2\cdot2 = 0
-\end{aligned}
-\end{split}
-\end{split}\]</div>
-<p>Sehingga matriks augmented menjadi:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{bmatrix} 
-1 &amp; 1 &amp; | 2\\
-0 &amp; 0 &amp; | 0 
+1 &amp; 1.5 &amp; 2 &amp; | 4.5 \\ 
+3 &amp; 2 &amp; 4 &amp; | 9 \\ 
+4 &amp; 1 &amp; 1 &amp; | 6 
 \end{bmatrix}
 \end{split}\]</div>
-<p><strong>4. Langkah 3: Ekspresi ( x_1 ) dalam Bentuk ( x_2 )</strong>
-Dari baris pertama, kita dapat menyatakan ( x_1 ) dalam bentuk ( x_2 ):</p>
+<p><strong>Langkah 2: Eliminasi Elemen di Bawah Pivot Pertama</strong>
+Kita buat elemen <strong>x_1</strong> di baris 2 dan 3 menjadi <strong>0</strong> dengan operasi:</p>
 <div class="math notranslate nohighlight">
 \[
-x_1 + x_2 = 2
+R_2 \leftarrow R_2 - 3R_1
 \]</div>
 <div class="math notranslate nohighlight">
 \[
-x_1 = 2 - x_2
+R_3 \leftarrow R_3 - 4R_1
 \]</div>
-<p><strong>5. Langkah 4: Menyatakan Solusi dalam Bentuk Parameter</strong>
-Karena kita memiliki satu persamaan dengan dua variabel, kita bisa menyatakan solusi dalam bentuk parameter. Misalkan ( x_2 = t ), maka:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix} 
+1 &amp; 1.5 &amp; 2 &amp; | 4.5 \\ 
+0 &amp; -2.5 &amp; -2 &amp; | -4.5 \\ 
+0 &amp; -5 &amp; -7 &amp; | -12 
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>Langkah 3: Normalisasi Baris Kedua</strong>
+Kita buat elemen diagonal kedua menjadi <strong>1</strong> dengan membagi baris kedua dengan -2.5:</p>
 <div class="math notranslate nohighlight">
 \[
-x_1 = 2 - t
+R_2 \leftarrow \frac{R_2}{-2.5}
 \]</div>
-<p><strong>6. Solusi Akhir</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix} 
+1 &amp; 1.5 &amp; 2 &amp; | 4.5 \\ 
+0 &amp; 1 &amp; 0.8 &amp; | 1.8 \\ 
+0 &amp; -5 &amp; -7 &amp; | -12 
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>Langkah 4: Eliminasi Elemen di Bawah Pivot Kedua</strong>
+Kita buat elemen <strong>x_2</strong> di baris ketiga menjadi <strong>0</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+R_3 \leftarrow R_3 + 5R_2
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix} 
+1 &amp; 1.5 &amp; 2 &amp; | 4.5 \\ 
+0 &amp; 1 &amp; 0.8 &amp; | 1.8 \\ 
+0 &amp; 0 &amp; -3 &amp; | -3 
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>Langkah 5: Normalisasi Baris Ketiga</strong>
+Kita buat elemen diagonal ketiga menjadi <strong>1</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+R_3 \leftarrow \frac{R_3}{-3}
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix} 
+1 &amp; 1.5 &amp; 2 &amp; | 4.5 \\ 
+0 &amp; 1 &amp; 0.8 &amp; | 1.8 \\ 
+0 &amp; 0 &amp; 1 &amp; | 1 
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>4. Substitusi Balik</strong>
+Sekarang kita bisa menyelesaikan variabel satu per satu:</p>
+<div class="math notranslate nohighlight">
+\[
+x_3 = 1
+\]</div>
+<p>Substitusi ( x_3 ) ke baris kedua:</p>
+<div class="math notranslate nohighlight">
+\[
+x_2 + 0.8(1) = 1.8
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_2 = 1.8 - 0.8 = 1
+\]</div>
+<p>Substitusi ( x_2 ) dan ( x_3 ) ke baris pertama:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 + 1.5(1) + 2(1) = 4.5
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_1 = 4.5 - 1.5 - 2 = 1
+\]</div>
+</section>
+<section id="solusi-akhir">
+<h1><strong>5. Solusi Akhir</strong><a class="headerlink" href="#solusi-akhir" title="Link to this heading">#</a></h1>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{cases} 
-x_1 = 2 - t\\
-x_2 = t
+x_1 = 1 \\ 
+x_2 = 1 \\ 
+x_3 = 1
 \end{cases}
 \end{split}\]</div>
-<p>dengan ( t ) sebagai parameter bebas.</p>
-</section>
 <section id="contoh-soal-4">
-<h1>Contoh Soal 4<a class="headerlink" href="#contoh-soal-4" title="Link to this heading">#</a></h1>
+<h2>Contoh Soal 4<a class="headerlink" href="#contoh-soal-4" title="Link to this heading">#</a></h2>
 <p>Selesaikan dengan menggunakan eliminasi gauss</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -850,6 +914,7 @@ x_3&amp;=x_3
 \]</div>
 <p>Sistem ini memiliki banyak solusi karena terdapat parameter bebas <span class="math notranslate nohighlight">\((t)\)</span>.</p>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -913,7 +978,10 @@ x_3&amp;=x_3
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-2">Contoh Soal 2</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-3">Contoh Soal 3</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-minggu-kemaren">Soal Minggu kemaren</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-4">Contoh Soal 4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-akhir"><strong>5. Solusi Akhir</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-4">Contoh Soal 4</a></li>
+</ul>
+</li>
 </ul>
 
   </nav></div>
