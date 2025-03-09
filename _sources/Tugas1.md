@@ -323,7 +323,7 @@ $$
 
 di mana (t) adalah parameter bebas.
 
-### Soal Minggu kemaren
+####  Soal Minggu kemaren
 **Penyelesaian Sistem Persamaan Linear dengan Eliminasi Gauss**
 
 **1. Diketahui Sistem Persamaan Linear:**
@@ -458,7 +458,7 @@ $$
 x_1 = 4.5 - 1.5 - 2 = 1
 $$
 
-## **5. Solusi Akhir**
+**5. Solusi Akhir**
 
 $$
 \begin{cases} 
