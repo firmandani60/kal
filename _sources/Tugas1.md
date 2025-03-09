@@ -247,6 +247,8 @@ x_3&=\frac{1}{3}
 \end{aligned}
 $$
 
+<iframe scrolling="no" title="Lab11 System of Equations - Multivariable" src="https://www.geogebra.org/material/iframe/id/dmIAq6KX/width/1164/height/816/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="1164px" height="816px" style="border:0px;"> </iframe>
+
 ### Contoh Soal 3 
 Selesaikan dengan menggunakan eliminasi gauss
 
