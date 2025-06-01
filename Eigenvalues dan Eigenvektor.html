@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Komputasi Aljabar Linier &#8212; Komputasi Aljabar Linier</title>
+    <title>perkalian titik vektor (DOT PRODUCT) &#8212; Komputasi Aljabar Linier</title>
   
   
   
@@ -59,10 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Eigenvalues dan Eigenvektor';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Sistem Persamaan linier" href="persamaan.html" />
+    <link rel="prev" title="Eigenvalues dan Eigenvektor" href="eigen.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -145,7 +143,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -176,13 +174,13 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Komputasi Aljabar Linier
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="persamaan.html">Sistem Persamaan linier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tugas1.html">Operasi Baris Elementer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas2.html">Matrik</a></li>
@@ -194,7 +192,7 @@
 
 
 <li class="toctree-l1"><a class="reference internal" href="eigen.html">Eigenvalues dan Eigenvektor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Eigenvalues%20dan%20Eigenvektor.html">perkalian titik vektor (DOT PRODUCT)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">perkalian titik vektor (DOT PRODUCT)</a></li>
 
 
 
@@ -270,7 +268,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FEigenvalues dan Eigenvektor.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -300,7 +298,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/Eigenvalues dan Eigenvektor.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -310,7 +308,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -384,7 +382,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Komputasi Aljabar Linier</h1>
+    <h1>perkalian titik vektor (DOT PRODUCT)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -394,8 +392,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">perkalian titik vektor (DOT PRODUCT)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. Perkalian Titik Vektor (Dot Product)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hitungan-manual-dot-product">Hitungan Manual - Dot Product</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#vektor-satuan">2. Vektor Satuan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hitungan-manual-vektor-satuan">Hitungan Manual - Vektor Satuan</a></li>
 </ul>
+
             </nav>
         </div>
     </div>
@@ -406,35 +409,136 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="komputasi-aljabar-linier">
-<h1>Komputasi Aljabar Linier<a class="headerlink" href="#komputasi-aljabar-linier" title="Link to this heading">#</a></h1>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
-<p>Nama    : M Tegar FIrmandani</p>
-<p>Nim     : 230411100084</p>
-<p>Prodi   : Teknik Informatika</p>
-<p>Email   : <a class="reference external" href="mailto:firmandani6061&#37;&#52;&#48;gmail&#46;com">firmandani6061<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="persamaan.html">Sistem Persamaan linier</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tugas1.html">Operasi Baris Elementer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tugas2.html">Matrik</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tugas2.html#penyelesaian-persamaan-menggunakan-invers-matrik">Penyelesaian persamaan menggunakan invers matrik</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tugas2.html#determinan-matrik">Determinan Matrik</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transformasi.html">Refleksi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transformasi.html#matrik-geser-shear-matrix">Matrik Geser ( Shear Matrix)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transformasi.html#matrik-rotasi">Matrik Rotasi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transformasi.html#komposisi-transformasi">Komposisi transformasi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transformasi.html#matrik-translasi">Matrik Translasi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="eigen.html">Eigenvalues dan Eigenvektor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Eigenvalues%20dan%20Eigenvektor.html">perkalian titik vektor (DOT PRODUCT)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Eigenvalues%20dan%20Eigenvektor.html#id1">1. Perkalian Titik Vektor (Dot Product)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Eigenvalues%20dan%20Eigenvektor.html#hitungan-manual-dot-product">Hitungan Manual - Dot Product</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Eigenvalues%20dan%20Eigenvektor.html#vektor-satuan">2. Vektor Satuan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Eigenvalues%20dan%20Eigenvektor.html#hitungan-manual-vektor-satuan">Hitungan Manual - Vektor Satuan</a></li>
+  <section id="perkalian-titik-vektor-dot-product">
+<h1>perkalian titik vektor (DOT PRODUCT)<a class="headerlink" href="#perkalian-titik-vektor-dot-product" title="Link to this heading">#</a></h1>
+</section>
+<section id="id1">
+<h1>1. Perkalian Titik Vektor (Dot Product)<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p><strong>Definisi:</strong>
+Perkalian titik (dot product) antara dua vektor <strong>A</strong> dan <strong>B</strong> adalah hasil kali skalar yang dihitung dengan cara menjumlahkan hasil kali komponen yang bersesuaian. Jika:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{A} = (a_1, a_2, a_3, \ldots, a_n)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{B} = (b_1, b_2, b_3, \ldots, b_n)
+\]</div>
+<p>Maka dot product:
+$<span class="math notranslate nohighlight">\(
+\mathbf{A} \cdot \mathbf{B} = a_1b_1 + a_2b_2 + a_3b_3 + \ldots + a_nb_n
+\)</span>$</p>
+<p><strong>Rumus:</strong>
+$<span class="math notranslate nohighlight">\(
+\mathbf{A} \cdot \mathbf{B} = \sum_{i=1}^{n} a_i b_i
+\)</span>$</p>
+<p><strong>Interpretasi Geometris:</strong>
+$<span class="math notranslate nohighlight">\(
+\mathbf{A} \cdot \mathbf{B} = |\mathbf{A}| |\mathbf{B}| \cos \theta
+\)</span><span class="math notranslate nohighlight">\(
+di mana \)</span>\theta$ adalah sudut antara kedua vektor.</p>
+</section>
+<section id="hitungan-manual-dot-product">
+<h1>Hitungan Manual - Dot Product<a class="headerlink" href="#hitungan-manual-dot-product" title="Link to this heading">#</a></h1>
+<p>Misalkan:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathbf{A} = (1, 2, 3)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbf{B} = (4, 5, 6)\)</span></p></li>
 </ul>
+<p>Hitungan manual:
+$<span class="math notranslate nohighlight">\(
+\mathbf{A} \cdot \mathbf{B} = (1 \times 4) + (2 \times 5) + (3 \times 6)
+\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+= 4 + 10 + 18 = 32
+\)</span>$</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Program: Dot Product</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">dot_product</span><span class="p">(</span><span class="n">v1</span><span class="p">,</span> <span class="n">v2</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">v1</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">v2</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Vektor harus memiliki dimensi yang sama&quot;</span><span class="p">)</span>
+
+    <span class="n">hasil</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">v1</span><span class="p">,</span> <span class="n">v2</span><span class="p">):</span>
+        <span class="n">hasil</span> <span class="o">+=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+    <span class="k">return</span> <span class="n">hasil</span>
+
+<span class="c1"># Contoh penggunaan</span>
+<span class="n">vektor1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">vektor2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+
+<span class="n">hasil_dot</span> <span class="o">=</span> <span class="n">dot_product</span><span class="p">(</span><span class="n">vektor1</span><span class="p">,</span> <span class="n">vektor2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dot product dari </span><span class="si">{</span><span class="n">vektor1</span><span class="si">}</span><span class="s2"> dan </span><span class="si">{</span><span class="n">vektor2</span><span class="si">}</span><span class="s2"> adalah: </span><span class="si">{</span><span class="n">hasil_dot</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dot product dari [1, 2, 3] dan [4, 5, 6] adalah: 32
+</pre></div>
+</div>
+</div>
 </div>
 </section>
+<section id="vektor-satuan">
+<h1>2. Vektor Satuan<a class="headerlink" href="#vektor-satuan" title="Link to this heading">#</a></h1>
+<p><strong>Definisi:</strong>
+Vektor satuan adalah vektor yang memiliki panjang (magnitude) 1. Untuk setiap vektor <strong>V</strong>, vektor satuannya <span class="math notranslate nohighlight">\(\hat{V}\)</span> diperoleh dengan membagi setiap komponennya dengan panjang vektornya.</p>
+<p><strong>Rumus:</strong>
+$<span class="math notranslate nohighlight">\(
+|\mathbf{V}| = \sqrt{v_1^2 + v_2^2 + \ldots + v_n^2}
+\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+\hat{\mathbf{V}} = \frac{\mathbf{V}}{|\mathbf{V}|}
+\)</span>$</p>
+</section>
+<section id="hitungan-manual-vektor-satuan">
+<h1>Hitungan Manual - Vektor Satuan<a class="headerlink" href="#hitungan-manual-vektor-satuan" title="Link to this heading">#</a></h1>
+<p>Misalkan:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathbf{V} = (3, 4, 0)\)</span></p></li>
+</ul>
+<p><strong>Panjang vektor:</strong>
+$<span class="math notranslate nohighlight">\(
+|\mathbf{V}| = \sqrt{3^2 + 4^2 + 0^2} = \sqrt{9 + 16} = \sqrt{25} = 5
+\)</span>$</p>
+<p><strong>Vektor satuan:</strong>
+$<span class="math notranslate nohighlight">\(
+\hat{\mathbf{V}} = \frac{1}{5} \times (3, 4, 0)
+\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+= (0.6, 0.8, 0)
+\)</span>$</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Program: Konversi ke Vektor Satuan</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">vector_magnitude</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">v</span><span class="p">))</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">unit_vector</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="n">magnitude</span> <span class="o">=</span> <span class="n">vector_magnitude</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">magnitude</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Vektor nol tidak memiliki vektor satuan&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">x</span> <span class="o">/</span> <span class="n">magnitude</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">v</span><span class="p">]</span>
+
+<span class="c1"># Contoh penggunaan</span>
+<span class="n">vektor</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">vektor_satuan</span> <span class="o">=</span> <span class="n">unit_vector</span><span class="p">(</span><span class="n">vektor</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Vektor satuan dari </span><span class="si">{</span><span class="n">vektor</span><span class="si">}</span><span class="s2"> adalah: </span><span class="si">{</span><span class="n">vektor_satuan</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Vektor satuan dari [3, 4, 0] adalah: [0.6, 0.8, 0.0]
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -467,14 +571,14 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="persamaan.html"
-       title="next page">
+    <a class="left-prev"
+       href="eigen.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Sistem Persamaan linier</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Eigenvalues dan Eigenvektor</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -492,8 +596,13 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">perkalian titik vektor (DOT PRODUCT)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. Perkalian Titik Vektor (Dot Product)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hitungan-manual-dot-product">Hitungan Manual - Dot Product</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#vektor-satuan">2. Vektor Satuan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hitungan-manual-vektor-satuan">Hitungan Manual - Vektor Satuan</a></li>
 </ul>
+
   </nav></div>
 
 </div></div>
